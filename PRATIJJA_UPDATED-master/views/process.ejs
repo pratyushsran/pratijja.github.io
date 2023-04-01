@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <title>Pratijja</title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/img/favicon-16x16.png" rel="icon">
+  <link href="/img/favicon-32x32.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS Files -->
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  
+   <link href="../css/about.css" rel="stylesheet">
+   <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class=" d-flex align-items-center justify-content-between">
+
+           <div class="logo">
+        <a href="/"><img src="img/logo 2 copy.png" class="logo"
+            style="padding: 0 !important; width: 16%;margin-left: 10% !important;"></a>
+        
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav  >
+        <style scoped>
+          .wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+ /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  background: rgb(0, 0, 0);
+
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  /* left: 20px; */
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.635);
+  cursor: pointer;
+  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+ /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+  background: #FEFCE8;
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  color: rgba(0, 0, 0, 0.635);;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  border-radius: 50px;
+  background: #000;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: #fff;
+   background: linear-gradient(#14ffe9, #3bfff8, #00ffd0);
+  /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+  width: 104%;
+  height: 110%;
+  left: -2%;
+  top: -5%; /* if the font is 'Oswald'*/
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  animation: rotate 1.5s linear infinite;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: #fff;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+        </style>
+
+        <!-- <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/rules">Rules</a></li>
+          <li><a class="nav-link scrollto" href="/about">About Us</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a href="/register" style="background: none;
+	 border: 1px solid;
+	 font: inherit;
+	 line-height: 1;
+	 margin: 1em 2em;
+	 padding: 0.4em 1em; color: #79f2f9;
+	 font: inherit;--color: #81ffff;
+	 --hover: #21f0ff; color: var(--color); 
+	 transition: 0.25s;" class="pulse  scrollto">
+              <style scoped>
+                .fill:hover,
+                .fill:focus {
+                  box-shadow: inset 0 0 0 2em var(--hover);
+                }
+
+                .pulse:hover,
+                .pulse:focus {
+                  animation: pulse 1s;
+                  box-shadow: 0 0 0 2em transparent;
+                }
+
+                @keyframes pulse {
+                  0% {
+                    box-shadow: 0 0 0 0 var(--hover);
+                  }
+                }
+
+                .close:hover,
+                .close:focus {
+                  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+                }
+
+                .raise:hover,
+                .raise:focus {
+                  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                  transform: translateY(-0.25em);
+                }
+
+                .up:hover,
+                .up:focus {
+                  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+                }
+
+                .slide:hover,
+                .slide:focus {
+                  box-shadow: inset 6.5em 0 0 0 var(--hover);
+                }
+
+                .offset {
+                  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+                }
+
+                .offset:hover,
+                .offset:focus {
+                  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+                }
+                
+
+                button {
+                  color: var(--color);
+                  transition: 0.25s;
+                }
+
+                button:hover,
+                button:focus {
+                  border-color: var(--hover);
+                  color: #fff;
+                }
+              </style>
+              Register Now !
+            </a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle text-light"></i> -->
+        <input type="checkbox" id="active"  >
+    <label for="active" class="menu-btn" ><i class="fas fa-bars"></i></label>
+    <div class="wrapper"  >
+      <ul>
+<li><a href="/">Home</a></li>
+<li><a href="/rules">Rules</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="https://pratijja.org#contact">Contact</a></li>
+<li><a href="/process">Process</a></li>
+<li><a href="/register" >Register</a></li>
+</ul>
+</div>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- <section id="about-fourth">
+			<h1 style="color: #00b7ff !important;margin-top:5% !important;">About <br /><b style="color: #00b7ff !important;">KRONICLE</b></h1>
+			<hr style="text-align: center !important;">
+			<span style="
+					color: #EDE6DB !important;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+				Literary and Debating Society was established in the academic year 2003-04 and is one of the oldest societies in Kalinga Institute of Industrial Technology [KIIT (Deemed to be University)]. The members of Kronicle Society firmly believe in the quote “It is better to debate a question without settling it, than to settle a question without debating it” by Joseph Joubert. Our motto, per Veritatum Veritas or through freedom the truth shall be set free, bears a testament to the fact that in every case of turmoil, in every source of discourse, we strongly strive to arrive at a solution inoculating facts, logic and strong convincing power. Debating is a skill people are born with, but has to be borne as a responsibility for a free, fair and better world. Through such determination and perseverance, we endeavor to prepare ourselves and people around us, to strengthen their shoulders and carry this responsibility forward.<br>
+				<br>
+				<b>#DontHateJustDebate</b> <br>
+				<b> #KRONICLE</b>
+
+			</span>
+		</section> -->
+        <section id="about-fourth" style=" box-sizing: border-box; text-align: justify;color: #EDE6DB !important;">
+          <div class="row">
+			<h1  style="margin-top: 3% !important; color: #00b7ff !important;">How to <br /><b style="color: #00b7ff !important;">Register?</b></h1></div>
+			<hr style="text-align: center !important;">
+           
+			<span  style="
+					color: #EDE6DB !important;
+                    display: block;
+                    font-size: 22px;
+                    font-weight: 600;
+                    text-align:inherit;
+                    ">
+                  
+
+<p>POINTS:<br>
+<ul>
+<li>Registration Fee: <br>
+--> 390 INR or 6 USD per speaker / adjudicator<br>
+--> For KIIT student: 300 INR per speaker / adjudicator <br>
+<li>Eligibility : Open(Non-Institutional teams & Independent Adjudicators are allowed)<br>
+<li>Adjudicator Rule: N=N for all institutes and cross teams.<br>
+ - N stands for "Number of teams"<br>
+ - This requirement may be waived if the Core and OrgComm feel so<br>
+<li>Platform: Online (Zoom +Discord)</p>
+</ul>
+<p>Note - All the participants will be briefed about the tournament on the event day.</p>
+			</span>
+            <div class="col-lg-12" style="padding-top: 7%;margin-bottom: 4%; box-sizing: border-box; text-align: center;">
+             <a  href="/register" class="padRegis pulse" style="background: none;
+	 border: 2px solid;
+	 font: inherit;
+	 line-height: 1;
+	 margin: 0.5em;
+	 padding: 1em 8em; color: #79f2f9;
+	 font: inherit;--color: #81ffff;
+	 --hover: #21f0ff; color: var(--color);
+	 transition: 0.25s;" >
+              <style scoped>
+                .fill:hover,
+                .fill:focus {
+                  box-shadow: inset 0 0 0 2em var(--hover);
+                }
+
+                .pulse:hover,
+                .pulse:focus {
+                  animation: pulse 1s;
+                  box-shadow: 0 0 0 2em transparent;
+                }
+
+                @keyframes pulse {
+                  0% {
+                    box-shadow: 0 0 0 0 var(--hover);
+                  }
+                }
+
+                .close:hover,
+                .close:focus {
+                  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+                }
+
+                .raise:hover,
+                .raise:focus {
+                  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                  transform: translateY(-0.25em);
+                }
+
+                .up:hover,
+                .up:focus {
+                  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+                }
+
+                .slide:hover,
+                .slide:focus {
+                  box-shadow: inset 6.5em 0 0 0 var(--hover);
+                }
+
+                .offset {
+                  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+                }
+
+                .offset:hover,
+                .offset:focus {
+                  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+                }
+
+                .fill {
+                  --color: #a972cb;
+                  --hover: #cb72aa;
+                }
+
+                .pulse {
+                  --color: #ef6eae;
+                  --hover: #ef8f6e;
+                }
+
+                .close {
+                  --color: #ff7f82;
+                  --hover: #ffdc7f;
+                }
+
+                .raise {
+                  --color: #ffa260;
+                  --hover: #e5ff60;
+                }
+
+                .up {
+                  --color: #e4cb58;
+                  --hover: #94e458;
+                }
+
+                .slide {
+                  --color: #8fc866;
+                  --hover: #66c887;
+                }
+
+                .offset {
+                  --color: #19bc8b;
+                  --hover: #1973bc;
+                }
+
+                button {
+                  color: var(--color);
+                  transition: 0.25s;
+                }
+
+                button:hover,
+                button:focus {
+                  border-color: var(--hover);
+                  color: #fff;
+                }
+              </style>
+              Register Now !
+            </a>
+            </div>
+		</section>
+		<!-- <section id="about-third">
+			<center>
+				<div class="row">
+
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 content" style="padding-left: inherit">
+						<h2 style="color: #00b7ff !important;">About <b style="color: #00b7ff !important;">KIIT</b></h2>
+						<hr>
+						<a href="https://kiit.ac.in" target="_blank">
+							<img style="height:100px; width: 140px;" src="/img/kiit-logo2.png">
+						</a>
+						<span id="para1" style=" 
+                       color: #EDE6DB !important;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+							Being one of the most premier universities in the eastern part of India, Kalinga Institute
+							of Industrial Technology Deemed to be University offers more than 200 academic programmes in
+							almost all the fields of education. First established as a Polytechnic Institute in 1992-93,
+							KIIT has 1997 as its base year, when the engineering college was all set to start. <br><br>
+							In 2004, KIIT was declared to be Deemed to be University by the Ministry of Human Resources
+							Development, Government of India. It was 2016, when it was approbated with "A" Grade by the
+							National Accreditation and Assessment Council (NAAC), India. It was the same year when KIIT
+							was certified with Category "A" status by the Ministry of Human Resources Development,
+							Government of India.
+							Eight undergraduate Engineering Courses have been accredited by NBA (Washington Accord) in
+							the year 2018-19. On 2nd August, 2019, KIIT was mandated to be an "Institute of Eminence ''
+							(IoE), as it fulfills all the criteria required for the title. <br><br>
+							Kalinga Institute of Industrial Technology Deemed to be University currently has 20 thriving
+							campuses which consist of 30,000 students coming from all over India and 55 countries across
+							the globe. It has carved a mark for itself in the global academic map by having MoU's with
+							more than 190 universities in the world. More than 60,000 alumini of KIIT are placed in
+							respectable positions
+							in diverse fields ranging from corporate world, enterprise, startups, academics, civil
+							servants, sports to politics and so on. The Tokyo Olympics 2021 had 3 participants who were
+							students of KIIT, them being Dutee Chand who participated in 100m, 200m sprints, Shivpal
+							Singh who took part in
+							Javelin Throw and Bhavani Devi who took part in Fencing, being the first female from India
+							to take part in the same.
+
+
+						</span>
+
+					</div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-1 content" style="padding-left: inherit"></div>
+
+					<div class="col-12 col-sm-12 col-md-6 col-lg-5 content kisswala" style="padding-left: inherit">
+						<h2 style="color: #00b7ff !important;">About <b style="color: #00b7ff !important;">KISS</b></h2>
+						<hr style="color: #DF624E;">
+						<a href="https://kiss.ac.in" target="_blank">
+							<img style="height:100px ;width:100px" src="/img/kiss-logo.png">
+						</a>
+						<span id="para2" style="
+                       color: #EDE6DB !important;
+                            display: block;
+                            font-size: 17px;
+                            font-weight: 500;
+                            text-align: justify;">
+							Kalinga Institute of Social Sciences (KISS) is a residential school providing free
+							education, room
+							and board, medical care, vocational, athletic and artistic training to 60,000 indigenous
+							children
+							(30,000 students in KISS, Bhubanseswar, 15,000 Alumni and 15,000 students in 10 satellite
+							centres of KISS in Odisha) from 62 different tribal groups. <br><br>
+
+							It started really small with 125 students in 1992-93 with an aim to give decent life to the
+							poorest of the poor tribal children. In the course of its existence for the last 27 years,
+							it has become a revolution among tribal population to eradicate poverty through Education.
+							KISS has become the first exclusive tribal deemed to be university in the World, the status
+							accorded by Ministry of Human Resources Development,
+							Government of India. <br><br>
+
+
+
+							KISS stands for Gender Equity, Vocational Empowerment and Women Empowerment based on the 3E
+							formula of “Enable, Educate and Empower.” It has been in special consultative status with
+							ECOSOC since 2015 and works in close collaboration with UNO and its agencies and organs. The
+							most important principle of the success of this model is the indigenous control of
+							education, where importance is given to preserving the culture, heritage and traditions of
+							tribal communities.
+						</span>
+
+					</div>
+				</div>
+			</center>
+		</section>
+
+
+		<section id="about-sixth">
+			<h1 style="color: #00b7ff !important;">About <br /><b style="color: #00b7ff !important;">Our Founder</b>
+			</h1>
+			<hr>
+			<center><img style="border-radius:50%;height:200px;width:200px;" src="/img/samanta.jpg">
+			</center>
+			<br>
+			<span style=" color: #EDE6DB !important;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+				Prof. Achyuta Samanta is an educationist, philanthropist, and social worker. He is the founder of
+				Kalinga Institute of Industrial Technology (KIIT) and Kalinga Institute of Social Sciences (KISS), both
+				educational institutions of global repute and recognition. KIIT is an Institution of Eminence and one of
+				the most prominent universities in India and globe for professional education having more than 30,000
+				students from all over India and 53 other countries. KISS is a home for 60,000 indigenous children all
+				absolutely free.<br><br>
+
+				Besides Education and tribal upliftment, healthcare and rural development, Shri. Samanta has contributed
+				immensely to art, culture, literature, film, media, society and national integration. It is really
+				incredible that the child who lost his father at the age of four, brought up amidst severe poverty and
+				deprivation with seven siblings and a widow mother in a quaint village in Odisha has accomplished this
+				monumental work without any favour or backing in such a short span of time for the society. He has
+				converted the remote village ‘Kalarabanka’, Cuttack into a Smart Village and the entire Manpur Panchayat
+				into a model Panchayat (cluster of villages).<br><br>
+
+				He has been conferred with more than 50 International and National awards and over 200 state awards
+				besides two highest Civilian Awards from Royal Kingdom of Bahrain and Mongolia. He has been conferred
+				with 44 Honorary Doctorate awards from universities in India and abroad. He is the first Odia to be a
+				member of both UGC and AICTE. He is currently the Member of Parliament (Lok Sabha) from Kandhamal,
+				Odisha and also the President of Volleyball Federation of India.<br><br>
+
+				As a social reformer, he has been propagating “Art of Giving” (philosophy of life), a concept aimed at
+				bringing peace and happiness around the globe. <br><br>
+
+				Despite all his achievements, he leads a simple lifestyle, keeps on marching towards the cause of
+				spreading smile among millions and achieving zero poverty, zero hunger, zero illiteracy.
+
+
+			</span>
+		</section>
+
+		<section id="about-fourth">
+			<h1 style="color: #00b7ff !important;">About <br /><b style="color: #00b7ff !important;">Art Of Giving</b>
+			</h1>
+			<hr>
+			<span style=" color: #EDE6DB !important;
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-align: justify;">
+
+				<b>Art of Giving</b> is all about creating an unconditional and sustainable abundance of love, peace and
+				happiness, and contentment for others through gestures of kindness and generosity. It was founded by
+				<b>Shri Achyuta Samanta</b> on <b>17 May 2013</b>. The key to peace and happiness lies in unlocking the
+				Art of Giving in each individual. It is a not-for-profit initiative for spreading, supporting, and
+				promoting the practice of the art of giving around the world.<br><br>
+
+				<b>VISION</b>: To bring together the sense of peace and happiness among people of all ages, especially
+				children and youth through genuine acts of giving back to society by the practice of empathy and
+				compassion to the distressed without any discrimination.<br><br>
+
+				<b>MISSION</b>: To make people aware and spread the philosophy of the Art of Giving across all sections
+				of human society worldwide through activities of sharing love, care, compassion, wisdom, knowledge,
+				skills, and talents.
+
+			</span>
+		</section> -->
+
+		<!-- <section id="about-fourth">
+      <div class="container">
+       
+          <div style="text-align: center;" class="row">
+              	<img src="../img/Government.png" alt="" height="90%" width="80%">
+          </div>
+		
+              
+			</div>
+		</section> -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top text-light">
+      <div class="container ">
+        <div class="row text-light">
+
+          <div class="col-lg-4 col-md-6 footer-contact text-light">
+            <h3 class="text-light">KSAC</h3>
+            <p class="text-light">
+              Kalinga Institute of Industrial Technology,<br> Chandaka Industrial Estate,<br> Patia, Bhubaneswar,<br> Odisha 751024<br><br>
+              <strong class="text-light phone" >Phone:</strong> +91 7735709660<br>
+              <strong class="text-light">Email:</strong>  kronicleofficial@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <!-- <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+              <img class="img-fluid" src="img/logo 2 copy.png" height="30%" alt="">
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <!-- <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul> -->
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links ">
+            <h4 class="text-light">Our Social Networks</h4>
+            <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+            
+             <div class="social-links mt-3">
+              <a href="https://www.youtube.com/channel/UCXUAk9FHlYArqCgloEiTI3w" class="mail-send" ><i class="bx bxl-youtube"></i></a>
+              <a href="mailto:kronicleofficial@gmail.com" ><i
+                  class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.facebook.com/kroniclekiit" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/kronicle_official/" class="instagram"><i
+                  class="bx bxl-instagram"></i></a>
+              <!-- <a href="#" class="google-plus"><i class="bx bxl-youtube"></i></a> -->
+              <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright text-light">
+        &copy; Copyright <strong><span>KRONICLE</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits text-light">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Developed by <a title="Morris Worm">🐛</a> <a >KRONICLE WEB TEAM</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/aos/aos.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>
